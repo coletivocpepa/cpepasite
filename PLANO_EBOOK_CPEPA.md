@@ -1,6 +1,6 @@
 # Plano de Implementação — Landing Page do E-book
 
-**E-book:** Autismo: O Que Não Contarão Às Famílias
+**E-book:** Autismo: O Que Não Contaram Às Famílias
 **Projeto:** Site CPEPA
 **Data:** 10/11/2026
 **Status:** planejado
@@ -9,7 +9,7 @@
 
 ## 1. Objetivo
 
-Criar uma landing page pública em `/ebook` para distribuir gratuitamente o e-book **Autismo: O Que Não Contarão Às Famílias**, mediante preenchimento de nome e WhatsApp. A página deve apresentar a proposta do material, a autoria, o conteúdo abordado e um formulário que libera o download imediato do PDF.
+Criar uma landing page pública em `/ebook` para distribuir gratuitamente o e-book **Autismo: O Que Não Contaram Às Famílias**, mediante preenchimento de nome e WhatsApp. A página deve apresentar a proposta do material, a autoria, o conteúdo abordado e um formulário que libera o download imediato do PDF.
 
 A landing deve ser coerente com a identidade e o posicionamento do CPEPA: linguagem acolhedora, responsável, não medicalizante, não culpabilizadora e sem promessas de cura.
 
@@ -67,7 +67,7 @@ O nome original do PDF contém acento e espaços. O nome de destino deve ser seg
 Gerar, a partir da capa original (1086×1448):
 
 - `public/ebook/capa.jpg` — aproximadamente 800 px de largura, qualidade 85, para o hero e o banner da home.
-- `public/ebook/og.jpg` — 1200×630, com a capa sobre fundo `brand-950`, para Open Graph e Twitter Card.
+- `public/ebook/og-contaram.jpg` — 1200×630, com a capa sobre fundo `brand-950`, para Open Graph e Twitter Card.
 
 O PNG original pode ser mantido em `public/ebook/capa.png` como fonte, mas a página deve usar o JPG otimizado para não carregar 2,1 MB no hero.
 
@@ -255,7 +255,7 @@ registrar_lead_ebook: {
 
 - Fundo escuro (`bg-brand-950`), seguindo o padrão do hero da home.
 - Eyebrow: “E-book gratuito · CPEPA”.
-- H1: **Autismo: O Que Não Contarão Às Famílias**.
+- H1: **Autismo: O Que Não Contaram Às Famílias**.
 - Lead: “Quando uma família recebe o diagnóstico, não recebe apenas uma informação clínica. Ela entra em um sistema de orientações, promessas, advertências e urgências. Este e-book abre espaço para as perguntas que costumam ficar de fora.”
 - CTA principal: “Quero baixar o e-book” → `#baixar`.
 - Capa à direita, com moldura, sombra e `priority`.
@@ -328,11 +328,11 @@ Fechamento: “Não é um receituário. É um material para pensar com mais cont
 
 Em `src/app/ebook/page.tsx`:
 
-- `title`: “E-book: Autismo — O Que Não Contarão Às Famílias”.
+- `title`: “E-book: Autismo — O Que Não Contaram Às Famílias”.
 - `description`: resumo do material e do formulário.
 - `openGraph`:
   - título e descrição;
-  - `images: [{ url: "/ebook/og.jpg", width: 1200, height: 630 }]`;
+  - `images: [{ url: "/ebook/og-contaram.jpg", width: 1200, height: 630 }]`;
   - `type: "article"`.
 - `twitter.card`: `summary_large_image`.
 - `alternates.canonical: "/ebook"`.
@@ -460,7 +460,7 @@ Criar `src/components/sections/EbookBanner.tsx` e inserir em `src/app/page.tsx` 
 Conteúdo do banner:
 
 - Eyebrow: “E-book gratuito”.
-- Título: “Autismo: O Que Não Contarão Às Famílias”.
+- Título: “Autismo: O Que Não Contaram Às Famílias”.
 - Texto curto: “Um material para famílias que querem mais do que uma única narrativa sobre o autismo.”
 - Capa em miniatura.
 - CTA: “Baixar o e-book” → `/ebook`.
@@ -483,7 +483,7 @@ Conteúdo do banner:
 
 - `public/ebook/capa.png`
 - `public/ebook/capa.jpg`
-- `public/ebook/og.jpg`
+- `public/ebook/og-contaram.jpg`
 - `public/ebook/ebook-autismo-o-que-nao-contaram-as-familias.pdf`
 - `supabase/migrations/20261110000001_ebook_leads.sql`
 - `src/app/ebook/page.tsx`
@@ -513,7 +513,7 @@ Conteúdo do banner:
 
 - [ ] 1. Aplicar a migration no Supabase (SQL Editor ou CLI).
 - [ ] 2. Mover os assets da raiz para `public/ebook/` com nomes seguros.
-- [ ] 3. Gerar `capa.jpg` e `og.jpg` otimizados.
+- [ ] 3. Gerar `capa.jpg` e `og-contaram.jpg` otimizados.
 - [ ] 4. Atualizar `src/lib/supabase/database.types.ts`.
 - [ ] 5. Criar `src/lib/whatsapp.ts`.
 - [ ] 6. Criar a landing `/ebook` e o formulário.

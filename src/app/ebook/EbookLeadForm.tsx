@@ -7,7 +7,7 @@ import { normalizarWhatsapp, whatsappValido } from "@/lib/whatsapp";
 const DOWNLOAD_URL =
   "/ebook/ebook-autismo-o-que-nao-contaram-as-familias.pdf";
 const DOWNLOAD_FILENAME =
-  "Autismo - O Que Não Contarão Às Famílias.pdf";
+  "Autismo - O Que Não Contaram Às Famílias.pdf";
 
 type RpcResult = { status?: string; codigo?: string };
 

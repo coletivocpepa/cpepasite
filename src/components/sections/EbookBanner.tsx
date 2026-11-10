@@ -10,7 +10,7 @@ export default function EbookBanner() {
         <div className="grid items-center gap-8 rounded-3xl border border-brand-100 bg-white p-8 sm:p-10 lg:grid-cols-[auto_1fr_auto] lg:gap-12">
           <Image
             src="/ebook/capa.jpg"
-            alt="Capa do e-book Autismo: O Que Não Contarão Às Famílias"
+            alt="Capa do e-book Autismo: O Que Não Contaram Às Famílias"
             width={800}
             height={1067}
             unoptimized
@@ -20,7 +20,7 @@ export default function EbookBanner() {
           <div>
             <p className="eyebrow">E-book gratuito</p>
             <h2 className="mt-3 font-serif text-2xl font-semibold text-brand-950 sm:text-3xl">
-              Autismo: O Que Não Contarão Às Famílias
+              Autismo: O Que Não Contaram Às Famílias
             </h2>
             <p className="mt-3 leading-relaxed text-brand-900/80">
               Um material para famílias que querem mais do que uma única

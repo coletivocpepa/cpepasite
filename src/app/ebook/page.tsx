@@ -5,33 +5,33 @@ import { SITE_URL } from "@/lib/site-url";
 import EbookLeadForm from "./EbookLeadForm";
 
 export const metadata: Metadata = {
-  title: "E-book: Autismo — O Que Não Contarão Às Famílias",
+  title: "E-book: Autismo — O Que Não Contaram Às Famílias",
   description:
     "Baixe gratuitamente o e-book de Lucio Escobar sobre o que costuma ficar de fora quando uma família recebe o diagnóstico de autismo: limites das pesquisas, conflitos de interesse, efeitos das intervenções intensivas e a escuta dos próprios autistas.",
   alternates: {
     canonical: "/ebook",
   },
   openGraph: {
-    title: "E-book: Autismo — O Que Não Contarão Às Famílias",
+    title: "E-book: Autismo — O Que Não Contaram Às Famílias",
     description:
       "Informação ampla, honesta e contextualizada para famílias que querem mais do que uma única narrativa sobre o autismo.",
     type: "article",
     locale: "pt_BR",
     images: [
       {
-        url: "/ebook/og.jpg",
+        url: "/ebook/og-contaram.jpg",
         width: 1200,
         height: 630,
-        alt: "Capa do e-book Autismo: O Que Não Contarão Às Famílias",
+        alt: "Capa do e-book Autismo: O Que Não Contaram Às Famílias",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-book: Autismo — O Que Não Contarão Às Famílias",
+    title: "E-book: Autismo — O Que Não Contaram Às Famílias",
     description:
       "Informação ampla, honesta e contextualizada para famílias que querem mais do que uma única narrativa sobre o autismo.",
-    images: ["/ebook/og.jpg"],
+    images: ["/ebook/og-contaram.jpg"],
   },
 };
 
@@ -100,10 +100,10 @@ const perguntas = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Book",
-  name: "Autismo: O Que Não Contarão Às Famílias",
+  name: "Autismo: O Que Não Contaram Às Famílias",
   description:
     "E-book sobre o que costuma ficar de fora quando uma família recebe o diagnóstico de autismo: limites das pesquisas, conflitos de interesse, efeitos das intervenções intensivas e a escuta dos próprios autistas.",
-  image: `${SITE_URL}/ebook/og.jpg`,
+  image: `${SITE_URL}/ebook/og-contaram.jpg`,
   inLanguage: "pt-BR",
   bookFormat: "https://schema.org/EBook",
   author: {
@@ -155,7 +155,7 @@ export default function EbookPage() {
             </p>
 
             <h1 className="mt-6 font-serif text-4xl leading-[1.12] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
-              Autismo: O Que Não Contarão Às Famílias
+              Autismo: O Que Não Contaram Às Famílias
             </h1>
 
             <p className="mt-8 text-lg leading-relaxed text-brand-100/90">
@@ -193,7 +193,7 @@ export default function EbookPage() {
             />
             <Image
               src="/ebook/capa.jpg"
-              alt="Capa do e-book Autismo: O Que Não Contarão Às Famílias"
+              alt="Capa do e-book Autismo: O Que Não Contaram Às Famílias"
               width={800}
               height={1067}
               priority
@@ -449,7 +449,7 @@ export default function EbookPage() {
               />
               <div>
                 <p className="font-serif text-lg font-semibold text-brand-950">
-                  Autismo: O Que Não Contarão Às Famílias
+                  Autismo: O Que Não Contaram Às Famílias
                 </p>
                 <p className="mt-1 text-sm text-brand-900/70">
                   PDF · Lucio Escobar
