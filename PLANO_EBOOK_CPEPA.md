@@ -67,7 +67,7 @@ O nome original do PDF contém acento e espaços. O nome de destino deve ser seg
 Gerar, a partir da capa original (1086×1448):
 
 - `public/ebook/capa.jpg` — aproximadamente 800 px de largura, qualidade 85, para o hero e o banner da home.
-- `public/ebook/og-contaram.jpg` — 1200×630, com a capa sobre fundo `brand-950`, para Open Graph e Twitter Card.
+- `public/ebook/og-contaram-v2.jpg` — 1200×630, com a capa sobre fundo `brand-950`, para Open Graph e Twitter Card.
 
 O PNG original pode ser mantido em `public/ebook/capa.png` como fonte, mas a página deve usar o JPG otimizado para não carregar 2,1 MB no hero.
 
@@ -332,7 +332,7 @@ Em `src/app/ebook/page.tsx`:
 - `description`: resumo do material e do formulário.
 - `openGraph`:
   - título e descrição;
-  - `images: [{ url: "/ebook/og-contaram.jpg", width: 1200, height: 630 }]`;
+  - `images: [{ url: "/ebook/og-contaram-v2.jpg", width: 1200, height: 630 }]`;
   - `type: "article"`.
 - `twitter.card`: `summary_large_image`.
 - `alternates.canonical: "/ebook"`.
@@ -483,7 +483,7 @@ Conteúdo do banner:
 
 - `public/ebook/capa.png`
 - `public/ebook/capa.jpg`
-- `public/ebook/og-contaram.jpg`
+- `public/ebook/og-contaram-v2.jpg`
 - `public/ebook/ebook-autismo-o-que-nao-contaram-as-familias.pdf`
 - `supabase/migrations/20261110000001_ebook_leads.sql`
 - `src/app/ebook/page.tsx`
@@ -513,7 +513,7 @@ Conteúdo do banner:
 
 - [ ] 1. Aplicar a migration no Supabase (SQL Editor ou CLI).
 - [ ] 2. Mover os assets da raiz para `public/ebook/` com nomes seguros.
-- [ ] 3. Gerar `capa.jpg` e `og-contaram.jpg` otimizados.
+- [ ] 3. Gerar `capa.jpg` e `og-contaram-v2.jpg` otimizados.
 - [ ] 4. Atualizar `src/lib/supabase/database.types.ts`.
 - [ ] 5. Criar `src/lib/whatsapp.ts`.
 - [ ] 6. Criar a landing `/ebook` e o formulário.

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     images: [
       {
-        url: "/ebook/og-contaram.jpg",
+        url: "/ebook/og-contaram-v2.jpg",
         width: 1200,
         height: 630,
         alt: "Capa do e-book Autismo: O Que Não Contaram Às Famílias",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "E-book: Autismo — O Que Não Contaram Às Famílias",
     description:
       "Informação ampla, honesta e contextualizada para famílias que querem mais do que uma única narrativa sobre o autismo.",
-    images: ["/ebook/og-contaram.jpg"],
+    images: ["/ebook/og-contaram-v2.jpg"],
   },
 };
 
@@ -103,7 +103,7 @@ const jsonLd = {
   name: "Autismo: O Que Não Contaram Às Famílias",
   description:
     "E-book sobre o que costuma ficar de fora quando uma família recebe o diagnóstico de autismo: limites das pesquisas, conflitos de interesse, efeitos das intervenções intensivas e a escuta dos próprios autistas.",
-  image: `${SITE_URL}/ebook/og-contaram.jpg`,
+  image: `${SITE_URL}/ebook/og-contaram-v2.jpg`,
   inLanguage: "pt-BR",
   bookFormat: "https://schema.org/EBook",
   author: {
