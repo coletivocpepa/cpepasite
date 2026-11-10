@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cepepa-site",
+  "account_id": "3a42d7ec731a9747746418397d72f834",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-04",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "cepepa-site"
+    }
+  ],
+  "vars": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://xeglpwjgyyzzfqurdauf.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_lDmlligPE6VLNT99R19bGQ_4eZIvAS7"
+  }
+}
